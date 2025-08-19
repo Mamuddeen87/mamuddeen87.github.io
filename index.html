@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mamuddeen - Professional Virtual Assistant | Bello Garba</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'obsidian': '#1A1A2E',
+                        'emerald-teal': '#4ECCA3',
+                        'crimson': '#E94560',
+                        'onyx': '#0F0F0F',
+                        'platinum': '#F5F5F7',
+                        'satin-gold': '#C0A062'
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                        'open-sans': ['Open Sans', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        .hero-bg {
+            background: linear-gradient(135deg, rgba(26, 26, 46, 0.9), rgba(15, 15, 15, 0.8)), 
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="%234ECCA3" stroke-width="0.5" opacity="0.3"/></pattern></defs><rect width="100%" height="100%" fill="%231A1A2E"/><rect width="100%" height="100%" fill="url(%23grid)"/><circle cx="200" cy="150" r="3" fill="%234ECCA3" opacity="0.6"/><circle cx="800" cy="300" r="2" fill="%23E94560" opacity="0.8"/><circle cx="1000" cy="200" r="4" fill="%234ECCA3" opacity="0.4"/><circle cx="300" cy="500" r="2" fill="%23C0A062" opacity="0.7"/><circle cx="600" cy="100" r="3" fill="%23E94560" opacity="0.5"/></svg>');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #4ECCA3, #E94560);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #E94560, #C0A062);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(233, 69, 96, 0.3);
+        }
+        
+        .navbar-scroll {
+            backdrop-filter: blur(10px);
+            background: rgba(26, 26, 46, 0.95);
+        }
+    </style>
+</head>
+<body class="font-open-sans text-platinum bg-platinum">
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="text-xl font-poppins font-bold text-emerald-teal">
+                Mamuddeen
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="hover:text-emerald-teal transition-colors">Home</a>
+                <a href="#about" class="hover:text-emerald-teal transition-colors">About</a>
+                <a href="#services" class="hover:text-emerald-teal transition-colors">Services</a>
+                <a href="#portfolio" class="hover:text-emerald-teal transition-colors">Portfolio</a>
+                <a href="#contact" class="hover:text-emerald-teal transition-colors">Contact</a>
+            </div>
+            <button id="mobile-menu" class="md:hidden text-emerald-teal">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+        <div id="mobile-nav" class="hidden md:hidden bg-obsidian border-t border-emerald-teal/20">
+            <div class="px-6 py-4 space-y-3">
+                <a href="#home" class="block hover:text-emerald-teal transition-colors">Home</a>
+                <a href="#about" class="block hover:text-emerald-teal transition-colors">About</a>
+                <a href="#services" class="block hover:text-emerald-teal transition-colors">Services</a>
+                <a href="#portfolio" class="block hover:text-emerald-teal transition-colors">Portfolio</a>
+                <a href="#contact" class="block hover:text-emerald-teal transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg min-h-screen flex items-center justify-center text-center pt-20">
+
+        <div class="container mx-auto px-6">
+            <div class="fade-in">
+                <div class="mb-8">  
+                   <a href="https://wa.link/ypbfwi" target="_blank" rel="noopener noreferrer">
+                        <div class="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-emerald-teal to-crimson p-1">
+                            <div class="w-full h-full rounded-full bg-obsidian overflow-hidden">
+                               <img src="https://pps.whatsapp.net/v/t61.24694-24/417411120_1456487194977362_3486938240214551389_n.jpg?ccb=11-4&oh=01_Q5Aa2QHgowD6IT2CflPa8PKRbLDVs2mAaFGc7oY6uuduedXtHQ&oe=68A5EA64&_nc_sid=5e03e0&_nc_cat=107" alt="Bello Garba" class="w-full h-full object-cover"/>
+                           </div>
+                        </div>
+                    </a>
+                </div>
+                <h1 class="text-5xl md:text-7xl font-poppins font-bold mb-6">
+                    <span class="text-emerald-teal">Bello</span> <span class="text-platinum">Garba</span>
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 text-platinum/90 max-w-3xl mx-auto">
+                    Professional Virtual Assistant | Tech-Savvy & Multi-Skilled Freelancer
+                </p>
+                <p class="text-lg mb-10 text-platinum/80 max-w-2xl mx-auto">
+                    I help individuals, businesses and organizations stay organized and efficient with my professional virtual assistance. My services are also enhanced by my expertise in data analytics, cloud computing, and graphic design.
+                </p>
+                <a href="https://wa.link/ypbfwi" class="btn-primary text-white px-8 py-4 rounded-full text-lg font-semibold inline-block">
+                    Hire Me <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-platinum text-obsidian">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="fade-in">
+                    <div class="bg-gradient-to-br from-emerald-teal/20 to-crimson/20 rounded-2xl p-8 h-96 flex items-center justify-center">
+
+                        
+                        <a href="https://wa.link/ypbfwi" target="_blank" rel="noopener noreferrer">
+  <div class="text-center">
+    <img
+      src="https://pps.whatsapp.net/v/t61.24694-24/417411120_1456487194977362_3486938240214551389_n.jpg?ccb=11-4&oh=01_Q5Aa2QHgowD6IT2CflPa8PKRbLDVs2mAaFGc7oY6uuduedXtHQ&oe=68A5EA64&_nc_sid=5e03e0&_nc_cat=107"
+      alt="Bello Garba"
+      class="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
+    />
+    <p class="text-obsidian/100">Bello Garba</p>
+    <p class="text-obsidian/60">(Mamuddeen)</p>
+  </div>
+</a>
+
+
+
+                    </div>
+                </div>
+                <div class="fade-in">
+                    <h2 class="text-4xl font-poppins font-bold mb-6 text-obsidian">
+                        About <span class="text-emerald-teal">Mamuddeen</span>
+                    </h2>
+                    <p class="text-lg mb-6 leading-relaxed">
+                        As a dedicated <strong>Professional Virtual Assistant</strong>, I'm passionate about helping businesses and entrepreneurs stay organized, efficient, and focused on what matters most. My core mission is to handle the administrative complexities so you can concentrate on growing your business.
+                    </p>
+                    <p class="text-lg mb-6 leading-relaxed">
+                        What sets me apart is my unique combination of traditional VA expertise enhanced with modern technical skills. Beyond managing schedules, emails, and administrative tasks, I bring value-added capabilities in <strong>Data Analytics</strong>, <strong>AWS Cloud Computing</strong>, and <strong>Graphic Design</strong>.
+                    </p>
+                    <p class="text-lg mb-8 leading-relaxed">
+                        This multi-skilled approach means I don't just manage your tasks—I optimize them, analyze them, and present them beautifully, all while leveraging cloud technologies for maximum efficiency and security.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <span class="bg-emerald-teal/20 text-emerald-teal px-4 py-2 rounded-full">8+ Years Experience</span>
+                        <span class="bg-crimson/20 text-crimson px-4 py-2 rounded-full">Multi-Skilled</span>
+                        <span class="bg-satin-gold/20 text-satin-gold px-4 py-2 rounded-full">Tech-Savvy</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-onyx text-platinum">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl font-poppins font-bold mb-6">
+                    My <span class="text-emerald-teal">Services</span>
+                </h2>
+                <p class="text-xl text-platinum/80 max-w-3xl mx-auto">
+                    Comprehensive virtual assistance enhanced with specialized technical skills to meet all your business needs
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Core Service -->
+                <div class="service-card bg-obsidian rounded-2xl p-8 text-center border-2 border-emerald-teal fade-in">
+                    <div class="w-16 h-16 bg-emerald-teal rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-headset text-2xl text-obsidian"></i>
+                    </div>
+                    <h3 class="text-xl font-poppins font-bold mb-4 text-emerald-teal">Virtual Assistance</h3>
+                    <p class="text-platinum/80 mb-4">Core Service</p>
+                    <p class="text-sm leading-relaxed">
+                        Complete administrative support, email management, scheduling, customer service, and business operations management.
+                    </p>
+                </div>
+
+                <!-- Additional Skills -->
+                <div class="service-card bg-obsidian rounded-2xl p-8 text-center border border-platinum/20 fade-in">
+                    <div class="w-16 h-16 bg-crimson rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-chart-line text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-poppins font-bold mb-4">Data Analytics</h3>
+                    <p class="text-platinum/80 mb-4">Value-Added Skill</p>
+                    <p class="text-sm leading-relaxed">
+                        Transform your business data into actionable insights with advanced analytics and reporting capabilities.
+                    </p>
+                </div>
+
+                <div class="service-card bg-obsidian rounded-2xl p-8 text-center border border-platinum/20 fade-in">
+                    <div class="w-16 h-16 bg-satin-gold rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fab fa-aws text-2xl text-obsidian"></i>
+                    </div>
+                    <h3 class="text-xl font-poppins font-bold mb-4">AWS Cloud Computing</h3>
+                    <p class="text-platinum/80 mb-4">Value-Added Skill</p>
+                    <p class="text-sm leading-relaxed">
+                        Leverage cloud technologies for scalable, secure, and efficient business operations and data management.
+                    </p>
+                </div>
+
+                <div class="service-card bg-obsidian rounded-2xl p-8 text-center border border-platinum/20 fade-in">
+                    <div class="w-16 h-16 bg-emerald-teal rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-palette text-2xl text-obsidian"></i>
+                    </div>
+                    <h3 class="text-xl font-poppins font-bold mb-4">Graphic Design</h3>
+                    <p class="text-platinum/80 mb-4">Value-Added Skill</p>
+                    <p class="text-sm leading-relaxed">
+                        Create stunning visual content, presentations, and marketing materials that elevate your brand presence.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Work With Me Section -->
+    <section class="py-20 bg-platinum text-obsidian">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl font-poppins font-bold mb-6">
+                    Why Work <span class="text-emerald-teal">With Me</span>
+                </h2>
+                <p class="text-xl text-obsidian/80 max-w-3xl mx-auto">
+                    My unique combination of skills makes me more than just a virtual assistant—I'm your comprehensive business solution partner
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center fade-in">
+                    <div class="w-20 h-20 bg-emerald-teal rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-cogs text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-poppins font-bold mb-4">Multi-Skilled Efficiency</h3>
+                    <p class="leading-relaxed">
+                        Instead of hiring multiple specialists, get comprehensive support from one reliable professional who understands how all pieces fit together.
+                    </p>
+                </div>
+                
+                <div class="text-center fade-in">
+                    <div class="w-20 h-20 bg-crimson rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-rocket text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-poppins font-bold mb-4">Tech-Enhanced Solutions</h3>
+                    <p class="leading-relaxed">
+                        Traditional VA services enhanced with modern technology—from cloud-based workflows to data-driven insights that optimize your operations.
+                    </p>
+                </div>
+                
+                <div class="text-center fade-in">
+                    <div class="w-20 h-20 bg-satin-gold rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-shield-alt text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-poppins font-bold mb-4">Reliable & Scalable</h3>
+                    <p class="leading-relaxed">
+                        Consistent, professional service that grows with your business, backed by secure cloud infrastructure and proven methodologies.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-onyx text-platinum">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl font-poppins font-bold mb-6">
+                    My <span class="text-emerald-teal">Portfolio</span>
+                </h2>
+                <p class="text-xl text-platinum/80 max-w-3xl mx-auto">
+                    Showcasing successful projects across virtual assistance, analytics, cloud solutions, and design
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-obsidian rounded-2xl overflow-hidden fade-in">
+                    <div class="h-48 bg-gradient-to-br from-emerald-teal/20 to-crimson/20 flex items-center justify-center">
+                        <i class="fas fa-image text-4xl text-emerald-teal"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-poppins font-bold mb-2">Business Process Optimization</h3>
+                        <p class="text-platinum/80 text-sm mb-4">Complete workflow redesign for e-commerce client, reducing processing time by 60%</p>
+                        <span class="text-emerald-teal text-sm">Virtual Assistance</span>
+                    </div>
+                </div>
+                
+                <div class="bg-obsidian rounded-2xl overflow-hidden fade-in">
+                    <div class="h-48 bg-gradient-to-br from-crimson/20 to-satin-gold/20 flex items-center justify-center">
+                        <i class="fas fa-chart-bar text-4xl text-crimson"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-poppins font-bold mb-2">Sales Analytics Dashboard</h3>
+                        <p class="text-platinum/80 text-sm mb-4">Interactive dashboard providing real-time insights into sales performance and trends</p>
+                        <span class="text-crimson text-sm">Data Analytics</span>
+                    </div>
+                </div>
+                
+                <div class="bg-obsidian rounded-2xl overflow-hidden fade-in">
+                    <div class="h-48 bg-gradient-to-br from-satin-gold/20 to-emerald-teal/20 flex items-center justify-center">
+                        <i class="fab fa-aws text-4xl text-satin-gold"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-poppins font-bold mb-2">Cloud Migration Project</h3>
+                        <p class="text-platinum/80 text-sm mb-4">Seamless migration of client infrastructure to AWS, improving reliability and reducing costs</p>
+                        <span class="text-satin-gold text-sm">AWS Cloud</span>
+                    </div>
+                </div>
+                
+                <div class="bg-obsidian rounded-2xl overflow-hidden fade-in">
+                    <div class="h-48 bg-gradient-to-br from-emerald-teal/20 to-crimson/20 flex items-center justify-center">
+                        <i class="fas fa-palette text-4xl text-emerald-teal"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-poppins font-bold mb-2">Brand Identity Package</h3>
+                        <p class="text-platinum/80 text-sm mb-4">Complete visual identity design for startup, including logo, business cards, and marketing materials</p>
+                        <span class="text-emerald-teal text-sm">Graphic Design</span>
+                    </div>
+                </div>
+                
+                <div class="bg-obsidian rounded-2xl overflow-hidden fade-in">
+                    <div class="h-48 bg-gradient-to-br from-crimson/20 to-emerald-teal/20 flex items-center justify-center">
+                        <i class="fas fa-tasks text-4xl text-crimson"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-poppins font-bold mb-2">Project Management System</h3>
+                        <p class="text-platinum/80 text-sm mb-4">Custom project tracking solution integrating multiple tools for enhanced productivity</p>
+                        <span class="text-crimson text-sm">Virtual Assistance</span>
+                    </div>
+                </div>
+                
+                <div class="bg-obsidian rounded-2xl overflow-hidden fade-in">
+                    <div class="h-48 bg-gradient-to-br from-satin-gold/20 to-crimson/20 flex items-center justify-center">
+                        <i class="fas fa-mobile-alt text-4xl text-satin-gold"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-poppins font-bold mb-2">Mobile App UI Design</h3>
+                        <p class="text-platinum/80 text-sm mb-4">User interface design for productivity app with focus on user experience and accessibility</p>
+                        <span class="text-satin-gold text-sm">Graphic Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-platinum text-obsidian">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl font-poppins font-bold mb-6">
+                    Client <span class="text-emerald-teal">Testimonials</span>
+                </h2>
+                <p class="text-xl text-obsidian/80 max-w-3xl mx-auto">
+                    What clients say about working with me
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl p-8 shadow-lg fade-in">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-emerald-teal rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-white"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-poppins font-bold">Jibril Shirama</h4>
+                            <p class="text-sm text-obsidian/60">Director, Ummul-Qura Science Academy</p>
+                        </div>
+                    </div>
+                    <p class="text-obsidian/80 italic mb-4">
+                        "Bello transformed our operations completely. His VA skills combined with data analytics gave us insights we never had before. Highly recommended!"
+                    </p>
+                    <div class="flex text-satin-gold">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-8 shadow-lg fade-in">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-crimson rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-white"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-poppins font-bold">Aminu Suleiman</h4>
+                            <p class="text-sm text-obsidian/60">Headmaster</p>
+                        </div>
+                    </div>
+                    <p class="text-obsidian/80 italic mb-4">
+                        "The AWS migration Bello handled was flawless. He's not just a VA, he's a complete business solution. Our efficiency increased by 40%."
+                    </p>
+                    <div class="flex text-satin-gold">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-8 shadow-lg fade-in">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-satin-gold rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-white"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-poppins font-bold">Zainab Abdulfatah</h4>
+                            <p class="text-sm text-obsidian/60">Eli Initiative, CEO</p>
+                        </div>
+                    </div>
+                    <p class="text-obsidian/80 italic mb-4">
+                        "Professional, reliable, and incredibly skilled. Bello handles everything from admin tasks to creating beautiful designs. A true multi-talent!"
+                    </p>
+                    <div class="flex text-satin-gold">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admin Panel (Hidden by default) -->
+    <section id="admin-panel" class="hidden py-20 bg-crimson text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-8">
+                <h2 class="text-4xl font-poppins font-bold mb-4">
+                    <i class="fas fa-shield-alt mr-3"></i>Admin Panel
+                </h2>
+                <p class="text-white/80">View all form submissions</p>
+                <button id="logout-btn" class="mt-4 bg-white/20 hover:bg-white/30 px-4 py-2 rounded-lg transition-colors">
+                    <i class="fas fa-sign-out-alt mr-2"></i>Logout
+                </button>
+            </div>
+            
+            <div class="bg-white/10 rounded-2xl p-6">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 class="text-2xl font-poppins font-bold">Form Submissions</h3>
+                    <div class="flex gap-4">
+                        <span id="total-submissions" class="bg-white/20 px-4 py-2 rounded-lg">Total: 0</span>
+                        <button id="clear-submissions" class="bg-white/20 hover:bg-white/30 px-4 py-2 rounded-lg transition-colors">
+                            <i class="fas fa-trash mr-2"></i>Clear All
+                        </button>
+                        <button id="export-submissions" class="bg-emerald-teal hover:bg-emerald-teal/80 px-4 py-2 rounded-lg transition-colors">
+                            <i class="fas fa-download mr-2"></i>Export CSV
+                        </button>
+                    </div>
+                </div>
+                
+                <div id="submissions-container" class="space-y-4">
+                    <div class="text-center text-white/60 py-8">
+                        <i class="fas fa-inbox text-4xl mb-4"></i>
+                        <p>No submissions yet. Form responses will appear here.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admin Login Modal -->
+    <div id="admin-login-modal" class="hidden fixed inset-0 bg-black/50 z-50 flex items-center justify-center">
+        <div class="bg-obsidian rounded-2xl p-8 max-w-md w-full mx-4">
+            <h3 class="text-2xl font-poppins font-bold text-emerald-teal mb-6 text-center">Admin Access</h3>
+            <form id="admin-login-form">
+                <div class="mb-4">
+                    <label class="block text-sm font-semibold mb-2 text-platinum">Password</label>
+                    <input type="password" id="admin-password" class="w-full px-4 py-3 bg-onyx border border-platinum/20 rounded-lg focus:border-emerald-teal focus:outline-none transition-colors text-platinum" placeholder="Enter admin password">
+                </div>
+                <button type="submit" class="btn-primary w-full text-white py-3 rounded-lg font-semibold">
+                    <i class="fas fa-unlock mr-2"></i>Access Admin Panel
+                </button>
+            </form>
+            <button id="close-admin-modal" class="mt-4 text-platinum/60 hover:text-platinum transition-colors w-full text-center">Cancel</button>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-onyx text-platinum">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl font-poppins font-bold mb-6">
+                    Let's Work <span class="text-emerald-teal">Together</span>
+                </h2>
+                <p class="text-xl text-platinum/80 max-w-3xl mx-auto">
+                    Ready to streamline your business with professional virtual assistance? Get in touch with me today!
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="fade-in">
+                    <h3 class="text-2xl font-poppins font-bold mb-6">Get In Touch With ME, Yours Lovely</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-emerald-teal rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-envelope text-obsidian"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Email</p>
+                                <a href="mailto:bellog.ug@atbu.edu.ng" class="text-emerald-teal hover:text-crimson transition-colors">mamuddeen@zwoufashion.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-crimson rounded-full flex items-center justify-center mr-4">
+                                <i class="fab fa-linkedin text-white"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold">LinkedIn</p>
+                                <a href="#" class="text-emerald-teal hover:text-crimson transition-colors">linkedin.com/in/bellogarba</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-satin-gold rounded-full flex items-center justify-center mr-4">
+                                <i class="fab fa-twitter text-obsidian"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Twitter</p>
+                                <a href="#" class="text-emerald-teal hover:text-crimson transition-colors">@mamudeveloper</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="fade-in">
+                    <form class="space-y-6" action="submit_form.php" method="POST">
+                        <div>
+                            <label class="block text-sm font-semibold mb-2">Name</label>
+                            <input type="text" name="name" required class="w-full px-4 py-3 bg-obsidian border border-platinum/20 rounded-lg focus:border-emerald-teal focus:outline-none transition-colors" placeholder="Your Name">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-semibold mb-2">Email</label>
+                            <input type="email" name="email" required class="w-full px-4 py-3 bg-obsidian border border-platinum/20 rounded-lg focus:border-emerald-teal focus:outline-none transition-colors" placeholder="your@email.com">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-semibold mb-2">Project Type</label>
+                            <select name="project_type" required class="w-full px-4 py-3 bg-obsidian border border-platinum/20 rounded-lg focus:border-emerald-teal focus:outline-none transition-colors">
+                                <option value="">Select a service...</option>
+                                <option value="Virtual Assistance">Virtual Assistance</option>
+                                <option value="Data Analytics">Data Analytics</option>
+                                <option value="AWS Cloud Computing">AWS Cloud Computing</option>
+                                <option value="Graphic Design">Graphic Design</option>
+                                <option value="Multiple Services">Multiple Services</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-semibold mb-2">Message</label>
+                            <textarea rows="4" name="message" required class="w-full px-4 py-3 bg-obsidian border border-platinum/20 rounded-lg focus:border-emerald-teal focus:outline-none transition-colors" placeholder="Tell me about your project..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary w-full text-white py-3 rounded-lg font-semibold">
+                            Send Message <i class="fas fa-paper-plane ml-2"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-obsidian text-platinum py-12 border-t border-platinum/10">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="text-2xl font-poppins font-bold text-emerald-teal mb-4">
+                        Mamuddeen
+                    </div>
+                    <p class="text-platinum/80 text-sm">
+                        Professional Virtual Assistant with expertise in data analytics, cloud computing, and graphic design.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-poppins font-bold mb-4">Quick Links</h4>
+                    <div class="space-y-2 text-sm">
+                        <a href="#home" class="block hover:text-emerald-teal transition-colors">Home</a>
+                        <a href="#about" class="block hover:text-emerald-teal transition-colors">About</a>
+                        <a href="#services" class="block hover:text-emerald-teal transition-colors">Services</a>
+                        <a href="#portfolio" class="block hover:text-emerald-teal transition-colors">Portfolio</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-poppins font-bold mb-4">Services</h4>
+                    <div class="space-y-2 text-sm">
+                        <p class="text-platinum/80">Virtual Assistance</p>
+                        <p class="text-platinum/80">Data Analytics</p>
+                        <p class="text-platinum/80">AWS Cloud Computing</p>
+                        <p class="text-platinum/80">Graphic Design</p>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-poppins font-bold mb-4">Connect</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-emerald-teal rounded-full flex items-center justify-center hover:bg-crimson transition-colors">
+                            <i class="fab fa-linkedin text-obsidian"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-emerald-teal rounded-full flex items-center justify-center hover:bg-crimson transition-colors">
+                            <i class="fab fa-twitter text-obsidian"></i>
+                        </a>
+                        <a href="mailto:bellog.ug@atbu.edu.ng" class="w-10 h-10 bg-emerald-teal rounded-full flex items-center justify-center hover:bg-crimson transition-colors">
+                            <i class="fas fa-envelope text-obsidian"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-platinum/10 mt-8 pt-8 text-center text-sm text-platinum/60">
+                <p>&copy; 2025 Mamuddeen - Bello Garba. All rights reserved.</p>
+              <!--  <button id="admin-access-btn" class="mt-4 text-xs text-platinum/40 hover:text-emerald-teal transition-colors">
+                    Admin Access
+                </button> -->
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Mobile menu toggle
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileNav = document.getElementById('mobile-nav');
+        
+        mobileMenu.addEventListener('click', () => {
+            mobileNav.classList.toggle('hidden');
+        });
+
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                navbar.classList.add('navbar-scroll');
+            } else {
+                navbar.classList.remove('navbar-scroll');
+            }
+        });
+
+        // Fade in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Admin functionality
+        const ADMIN_PASSWORD = 'mamuddeen2024'; // Change this to your preferred password
+        let submissions = JSON.parse(localStorage.getItem('formSubmissions') || '[]');
+
+        // Admin access button
+        document.getElementById('admin-access-btn').addEventListener('click', () => {
+            document.getElementById('admin-login-modal').classList.remove('hidden');
+        });
+
+        // Close admin modal
+        document.getElementById('close-admin-modal').addEventListener('click', () => {
+            document.getElementById('admin-login-modal').classList.add('hidden');
+            document.getElementById('admin-password').value = '';
+        });
+
+        // Admin login
+        document.getElementById('admin-login-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const password = document.getElementById('admin-password').value;
+            
+            if (password === ADMIN_PASSWORD) {
+                document.getElementById('admin-login-modal').classList.add('hidden');
+                document.getElementById('admin-panel').classList.remove('hidden');
+                document.getElementById('contact').classList.add('hidden');
+                loadSubmissions();
+            } else {
+                alert('Incorrect password!');
+            }
+            document.getElementById('admin-password').value = '';
+        });
+
+        // Logout
+        document.getElementById('logout-btn').addEventListener('click', () => {
+            document.getElementById('admin-panel').classList.add('hidden');
+            document.getElementById('contact').classList.remove('hidden');
+        });
+
+        // Clear all submissions
+        document.getElementById('clear-submissions').addEventListener('click', () => {
+            if (confirm('Are you sure you want to delete all submissions?')) {
+                submissions = [];
+                localStorage.setItem('formSubmissions', JSON.stringify(submissions));
+                loadSubmissions();
+            }
+        });
+
+        // Export submissions to CSV
+        document.getElementById('export-submissions').addEventListener('click', () => {
+            if (submissions.length === 0) {
+                alert('No submissions to export!');
+                return;
+            }
+
+            const csvContent = [
+                ['Name', 'Email', 'Service', 'Message', 'Date/Time'],
+                ...submissions.map(sub => [
+                    sub.name,
+                    sub.email,
+                    sub.projectType,
+                    sub.message.replace(/"/g, '""'), // Escape quotes
+                    sub.timestamp
+                ])
+            ].map(row => row.map(field => `"${field}"`).join(',')).join('\n');
+
+            const blob = new Blob([csvContent], { type: 'text/csv' });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `form-submissions-${new Date().toISOString().split('T')[0]}.csv`;
+            a.click();
+            window.URL.revokeObjectURL(url);
+        });
+
+        // Load and display submissions
+        function loadSubmissions() {
+            const container = document.getElementById('submissions-container');
+            const totalSpan = document.getElementById('total-submissions');
+            
+            totalSpan.textContent = `Total: ${submissions.length}`;
+            
+            if (submissions.length === 0) {
+                container.innerHTML = `
+                    <div class="text-center text-white/60 py-8">
+                        <i class="fas fa-inbox text-4xl mb-4"></i>
+                        <p>No submissions yet. Form responses will appear here.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            container.innerHTML = submissions.map((sub, index) => `
+                <div class="bg-white/10 rounded-lg p-6 border border-white/20">
+                    <div class="flex justify-between items-start mb-4">
+                        <h4 class="font-poppins font-bold text-lg">#${submissions.length - index}</h4>
+                        <div class="flex gap-2">
+                            <span class="bg-emerald-teal/20 text-emerald-teal px-3 py-1 rounded-full text-sm">${sub.projectType}</span>
+                            <button onclick="deleteSubmission(${index})" class="text-white/60 hover:text-crimson transition-colors">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-4 text-sm">
+                        <div>
+                            <span class="font-semibold">Name:</span> ${sub.name}
+                        </div>
+                        <div>
+                            <span class="font-semibold">Email:</span> 
+                            <a href="mailto:${sub.email}" class="text-emerald-teal hover:underline">${sub.email}</a>
+                        </div>
+                        <div class="md:col-span-2">
+                            <span class="font-semibold">Message:</span>
+                            <p class="mt-1 bg-white/5 p-3 rounded border-l-4 border-emerald-teal">${sub.message}</p>
+                        </div>
+                        <div class="md:col-span-2 text-white/60">
+                            <i class="fas fa-clock mr-1"></i> ${sub.timestamp}
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Delete individual submission
+        window.deleteSubmission = function(index) {
+            if (confirm('Delete this submission?')) {
+                submissions.splice(index, 1);
+                localStorage.setItem('formSubmissions', JSON.stringify(submissions));
+                loadSubmissions();
+            }
+        };
+
+        // Form submission with response display and storage
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const projectType = formData.get('project_type');
+            const message = formData.get('message');
+            const timestamp = new Date().toLocaleString();
+            
+            // Store submission
+            const submission = { name, email, projectType, message, timestamp };
+            submissions.unshift(submission); // Add to beginning of array
+            localStorage.setItem('formSubmissions', JSON.stringify(submissions));
+            
+            // Create response display
+            const responseHtml = `
+                <div class="bg-emerald-teal/10 border border-emerald-teal rounded-lg p-6 mt-6">
+                    <h4 class="text-emerald-teal font-poppins font-bold text-lg mb-4">
+                        <i class="fas fa-check-circle mr-2"></i>Form Submission Received
+                    </h4>
+                    <div class="space-y-3 text-sm">
+                        <div class="flex">
+                            <span class="font-semibold w-24">Name:</span>
+                            <span class="text-platinum/90">${name}</span>
+                        </div>
+                        <div class="flex">
+                            <span class="font-semibold w-24">Email:</span>
+                            <span class="text-platinum/90">${email}</span>
+                        </div>
+                        <div class="flex">
+                            <span class="font-semibold w-24">Service:</span>
+                            <span class="text-platinum/90">${projectType}</span>
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="font-semibold mb-1">Message:</span>
+                            <span class="text-platinum/90 bg-obsidian/50 p-3 rounded border-l-4 border-emerald-teal">${message}</span>
+                        </div>
+                        <div class="flex">
+                            <span class="font-semibold w-24">Time:</span>
+                            <span class="text-platinum/90">${timestamp}</span>
+                        </div>
+                    </div>
+                    <p class="text-emerald-teal text-sm mt-4 italic">
+                        Thank you for reaching out! I'll review your request and get back to you within 24 hours.
+                    </p>
+                </div>
+            `;
+            
+            // Remove any existing response
+            const existingResponse = document.querySelector('.form-response');
+            if (existingResponse) {
+                existingResponse.remove();
+            }
+            
+            // Add response after form
+            const responseDiv = document.createElement('div');
+            responseDiv.className = 'form-response';
+            responseDiv.innerHTML = responseHtml;
+            this.parentNode.appendChild(responseDiv);
+            
+            // Reset form
+            this.reset();
+            
+            // Scroll to response
+            responseDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'970a5256b5019427',t:'MTc1NTQ0NTc2OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
