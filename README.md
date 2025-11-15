@@ -1,4 +1,4 @@
-## Mamuddeen: Professional Virtual Assistant & Tech-Savvy Freelancer 000000000000000
+## Mamuddeen: Professional Virtual Assistant & Tech-Savvy Freelancer 
 
 ## Overview: Beyond the Standard VA
 
