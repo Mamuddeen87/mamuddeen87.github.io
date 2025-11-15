@@ -1,16 +1,16 @@
-## Mamuddeen: Professional Virtual Assistant & Tech-Savvy Freelancer
+## Mamuddeen: Professional Virtual Assistant & Tech-Savvy Freelancer 000000000000000
 
 ## Overview: Beyond the Standard VA
 
-This repository contains the source code for my portfolio website, where I intend to showcase some of the services of I do.
+This repository contains the source code for my refined perfonal website, where I intend to showcase some of the services I do.
 
-Mamuddeen offers a unique blend of **professional virtual assistance** and specialized technical expertise in **Data Analytics**, **AWS Cloud Computing**, and **Graphic Design**, I am currently undergoing the a front-end course with ALX Africa. My  mission is to help individuals, businesses, and organizations achieve maximum efficiency, security, and growth by providing a multi-skilled, comprehensive business solution.
+**Mamuddeen** (being my brand name) offers a unique blend of **professional virtual assistance** and specialized technical expertise in **Data Analytics**, **AWS Cloud Computing**, and **Graphic Design**, I am currently undergoing the a front-end course with ALX Africa. My  mission is to help individuals, businesses, and organizations achieve maximum efficiency, security, and growth by providing a multi-skilled, comprehensive business solution.
 
-The website itself is a modern, single-page application designed for speed, clarity, and visual impact, reflecting the high-quality, professional nature of the services offered.
+The website itself is a modern, single-page application designed for speed, clarity, and visual impact. This reflects the high-quality and professional nature of the services I do offer.
 
 ---
 
-## ✨ Key Features & Value Proposition
+## Key Features & Value Proposition
 
 The website is structured to clearly communicate the value of a tech-enhanced Virtual Assistant:
 
@@ -22,7 +22,7 @@ The website is structured to clearly communicate the value of a tech-enhanced Vi
 
 ---
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 The project utilizes a straightforward and modern frontend stack:
 
@@ -35,46 +35,20 @@ The project utilizes a straightforward and modern frontend stack:
 
 ---
 
-## 🚀 Getting Started
-
-This is a static portfolio site, making setup extremely simple.
-
-### Prerequisites
-
-You need a web browser to view the file.
-
-### Installation & Local Setup
-
-1.  **Clone the repository:**
-    ```bash
-    git clone [repository-url-here]
-    cd mamuddeen-va-portfolio
-    ```
-2.  **Open the file:**
-    Simply open the `index.html` file in your preferred web browser.
-
-    ```bash
-    # Example (on most Unix/Linux systems)
-    open index.html 
-    ```
-    *Note: All CSS styling is included via Tailwind CDN and inline `<style>` blocks, making it a highly portable single file.*
-
----
-
-## 📞 Contact Information
+## Contact Information
 
 For professional inquiries, collaboration, or to hire Mamuddeen:
 
 | Channel | Contact Details |
 | :--- | :--- |
 | **WhatsApp** | `08034361458` ([Direct Link](https://wa.link/ypbfwi)) |
-| **Email** | `mamuddeen@zwoufashion.com` |
+| **Email** | `bellog.ug@atbu.edu.ng` |
 | **LinkedIn** | [Bello Garba](https://www.linkedin.com/in/bello-garba-52020a251) |
 | **Twitter (X)** | [@mamudeveloper](https://twitter.com/mamudeveloper?t=3hEvQYLCvd6YWc2-BItayg&s=09) |
 
 ---
 
-## 📄 License
+## License
 
 This project is open-source and free to use.
 
